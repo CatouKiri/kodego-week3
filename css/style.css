@@ -5,3 +5,8 @@ body {
     background-color:bisque;
     color: black;
 }
+
+label {
+    display: block;
+    background-color: green;
+}
