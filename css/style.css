@@ -14,6 +14,7 @@ h1, p {
 }
 
 fieldset {
+    border: none;
     padding: 2rem 0;
     border-bottom: 3px solid #3b3b4f;
 }
@@ -33,4 +34,15 @@ label {
     display: inline-block;
     /* background-color: green; */
     margin: 0.5rem 0;
+}
+
+input, textarea, select {
+    width: 100px;
+    margin: 10px 0 0;
+}
+
+.inline {
+    width: unset;
+    margin: 0 0.5em 0;
+    vertical-align: middle;
 }
