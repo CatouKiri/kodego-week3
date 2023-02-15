@@ -14,9 +14,9 @@
     <form action="">
     <!-- field set 1; firstName; lastName; email; password-->
     <fieldset>
-        <label for="#">Enter your First Name: <input type="text" required></label>
-        <label for="#">Enter your Last Name:input <input type="text" required></label>
-        <label for="#">Enter your Email: <input type="email" required></label>
+        <label for="#">Enter your First Name: <input type="text" name="first-name" required></label>
+        <label for="#">Enter your Last Name:input <input type="text" name="last-name" required></label>
+        <label for="#">Enter your Email: <input type="email" name="email" required></label>
         <label for="#">Enter your Password: <input type="password" minlength="8" pattern="[a-z0-5]{8}" required></label>
     </fieldset>
     <!-- field set 2 -->
@@ -27,20 +27,20 @@
     </fieldset>
     <!-- field set 3 -->
     <fieldset>
-        <label>Upload a profile picture <input type="file"></label>
-        <label for="#">Input your age (years): <input type="number" min="13" max="150"></label>
+        <label>Upload a profile picture <input type="file" name="file-upload"></label>
+        <label for="#">Input your age (years): <input type="number" min="13" max="150" name="age"></label>
         <label for="">How did you hear from us?
-            <select>
+            <select name="referrer">
                 <option value="">(select one)</option>
-                <option value="1">News</option>
-                <option value="2">Blog</option>
-                <option value="3">Forums</option>
-                <option value="4">Others</option>
+                <option value="1" name="news">News</option>
+                <option value="2" name="blog">Blog</option>
+                <option value="3" name="forums">Forums</option>
+                <option value="4" name="others">Others</option>
             </select>
         </label>
         <label for="#">
             Provide a bio:
-            <textarea name="" id="" cols="30" rows="3" placeholder="I like coding on a rainy day"></textarea>
+            <textarea name="bio" cols="30" rows="3" placeholder="I like coding on a rainy day..."></textarea>
         </label>
     </fieldset>
     <input type="submit" value="submit">
